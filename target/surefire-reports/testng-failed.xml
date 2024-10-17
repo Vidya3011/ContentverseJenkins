@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.NewTestDocuments">
+        <methods>
+          <include name="Createdoc1"/>
+          <include name="ViewerToolbar"/>
+          <include name="testValidLogin"/>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.NewTestDocuments -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

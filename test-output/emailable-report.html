@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test1</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">121,091</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">130,132</td><td></td><td></td></tr><tr><td><a href="#t2">Test3</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">307,029</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">4</th><th class="num">558,252</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Scripts.NewTestDocuments</td><td><a href="#m0">Createdoc1</a></td><td rowspan="1">1729002178735</td><td rowspan="1">83259</td></tr><tr class="failedeven"><td><a href="#m1">testValidLogin</a></td><td rowspan="1">1729002144264</td><td rowspan="1">24399</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Scripts.NewTestDocuments</td><td><a href="#m2">Createopen</a></td><td rowspan="1">1729002168784</td><td rowspan="1">9950</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Scripts.ValidLogin</td><td><a href="#m3">testValidLogin</a></td><td rowspan="1">1729002264848</td><td rowspan="1">127323</td></tr></tbody><tbody id="t2"><tr><th colspan="4">Test3 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Scripts.OpenDocument</td><td><a href="#m4">testOpenDocument</a></td><td rowspan="1">1729002395005</td><td rowspan="1">304125</td></tr></tbody></table><h2>Test1</h2><h3 id="m0">Scripts.NewTestDocuments#Createdoc1</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">DocumentType is:CVReports<br/>IndexValue is:Test document<br/>New Document Button is clicked <br/>Menu items areBrowse...
+Camera
+Scan...
+New Word Document
+New Excel Spreadsheet
+New Pdf Document<br/>Menu items are displayed<br/>Pages are uploaded successfully<br/>Folder location is: Export\New Drawer\Folder New<br/>document type is selected<br/>Index value is:Test document<br/>Create Button is clicked <br/>Navigate Button is clicked <br/>Recent Folder::[[ChromeDriver: chrome on WINDOWS (7d2f17b0df4de89cdcb20e47dee904d1)] -> xpath: //table[@id='recentFolders']/tbody/tr[1]/td[1]]<br/>Recent Document::[[ChromeDriver: chrome on WINDOWS (7d2f17b0df4de89cdcb20e47dee904d1)] -> xpath: .//table[@id='recentDocuments']/tbody/tr[1]/td[1]]<br/>The alert is not present<br/>Closing the viewer<br/>Logout Button is clicked </div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[@id=&apos;logedinusername&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pom.Logout.SetLogout(Logout.java:33)
+	at Scripts.LogoutPage.testLogout(LogoutPage.java:22)
+	at Scripts.CreateNavigateDocument.testCreateNaviagateDocument(CreateNavigateDocument.java:48)
+	at Scripts.NewTestDocuments.Createdoc1(NewTestDocuments.java:55)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;logedinusername&apos;]&quot;}
+  (Session info: chrome=129.0.6668.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT011&apos;, ip: &apos;10.4.8.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vidya.h\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d2f17b0df4de89cdcb20e47dee904d1
+*** Element info: {Using=xpath, value=//span[@id=&apos;logedinusername&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">Scripts.NewTestDocuments#testValidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Username:vidya<br/>Password:syntax@10<br/>Room:TestServer_2024B264bit.CV2024B2_64bitDB<br/>Remember me checkbox is selected<br/>Username: <br/>Password:<br/>Room: </div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;rooms&apos;]&quot;}
+  (Session info: chrome=129.0.6668.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT011&apos;, ip: &apos;10.4.8.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vidya.h\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d2f17b0df4de89cdcb20e47dee904d1
+*** Element info: {Using=xpath, value=//select[@id=&apos;rooms&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at Pom.LoginPage.&lt;init&gt;(LoginPage.java:70)
+	at Scripts.NewTestDocuments.testValidLogin(NewTestDocuments.java:32)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">Scripts.NewTestDocuments#Createopen</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test2</h2><h3 id="m3">Scripts.ValidLogin#testValidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">rc count:9<br/>Username:vidya<br/>Password:syntax@10<br/>Room:TestServer_2024B264bit.CV2024B2_64bitDB<br/>Remember me checkbox is selected<br/>Session message is not displayed<br/>Cabinet:New Cabinet<br/>Drawer:New Drawer<br/>Folder:New Folder<br/>ExistingCabinet:: Export<br/>Existing cabinet is selected<br/>Drawer is selected<br/>Folder is selected<br/>DocumentType is:CVReports<br/>IndexValue is:Test document<br/>New Document Button is clicked <br/>Menu items areBrowse...
+Camera
+Scan...
+New Word Document
+New Excel Spreadsheet
+New Pdf Document<br/>Menu items are displayed<br/>Pages are uploaded successfully<br/>Folder location is: Export\New Drawer\New Folder<br/>document type is selected<br/>Index value is:Test document<br/>Create Button is clicked <br/>View Button is clicked <br/>Comments are added<br/>Comments are edited<br/>Thumbnail is selected <br/>View menu icon is selected </div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:60,&quot;value&quot;:&quot;[object HTMLSpanElement] has no size and location&quot;}
+  (Session info: chrome=129.0.6668.100)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT011&apos;, ip: &apos;10.4.8.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vidya.h\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa8e1b600fd1c4cda53e152b3dbe8b53
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at Pom.ViewerToolbar.SetFullScreen(ViewerToolbar.java:531)
+	at Scripts.Viewer.testViewerToolbar(Viewer.java:32)
+	at Scripts.CreateDocument.testCreateDocument(CreateDocument.java:41)
+	at Scripts.NodeCreation.testCreateNode(NodeCreation.java:47)
+	at Scripts.ValidLogin.testValidLogin(ValidLogin.java:49)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test3</h2><h3 id="m4">Scripts.OpenDocument#testOpenDocument</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">rc count:9<br/>Username:vidya<br/>Password:syntax@10<br/>Room:TestServer_2024B264bit.CV2024B2_64bitDB<br/>Remember me checkbox is selected<br/>Comments are added<br/>Comments are edited<br/>Thumbnail is selected <br/>View menu icon is selected <br/>FullScreen icon is selected <br/>FullScreen icon is selected again <br/>Show thumbnails icon is selected  <br/>Show thumbnails icon is selected again <br/>Single page is selected  <br/>Double page is selected<br/>Vertical page is selected<br/>Horizontal page is selected<br/>Page menu icon is selected <br/>Copy icon is enabled and selected <br/>Page is copied successfully<br/>Page menu icon is selected again <br/>Paste icon is selected <br/>Page is Pasted successfully<br/>Document is deleted successfully <br/>Document is Saved successfully <br/>View as PDF menu icon is selected <br/>View as PDF link  is selected <br/>Download all Pages<br/>Download first Page<br/>Closing the viewer<br/>Logout Button is clicked <br/>Username: <br/>Password:<br/>Room: <br/>Remember me checkbox is selected<br/>Password should not be blank <br/>Session message is not displayed<br/>Comments are added<br/>Comments are edited<br/>Thumbnail is selected <br/>View menu icon is selected <br/>FullScreen icon is selected <br/>FullScreen icon is selected again <br/>Show thumbnails icon is selected  <br/>Show thumbnails icon is selected again <br/>Single page is selected  <br/>Double page is selected<br/>Vertical page is selected<br/>Horizontal page is selected<br/>Page menu icon is selected <br/>Copy icon is enabled and selected <br/>Page is copied successfully<br/>Page menu icon is selected again <br/>Paste icon is selected <br/>Page is Pasted successfully<br/>Document is deleted successfully <br/>Document is Saved successfully <br/>View as PDF menu icon is selected <br/>View as PDF link  is selected <br/>Download all Pages<br/>Download first Page<br/>Closing the viewer<br/>Logout Button is clicked <br/>Username: <br/>Password: <br/>Room: <br/>Remember me checkbox is selected</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;viewDocumentnavigator&apos;]/ul/li/a&quot;}
+  (Session info: chrome=129.0.6668.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CIPLWKT011&apos;, ip: &apos;10.4.8.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\vidya.h\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f2498c53e295413d09a04d450313795
+*** Element info: {Using=xpath, value=.//*[@id=&apos;viewDocumentnavigator&apos;]/ul/li/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at Pom.OpenDoc.SetExpandNode(OpenDoc.java:66)
+	at Scripts.OpenDocument.testOpenDocument(OpenDocument.java:42)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

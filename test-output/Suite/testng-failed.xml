@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.NewTestDocuments">
+        <methods>
+          <include name="Createdoc1"/>
+          <include name="testValidLogin"/>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.NewTestDocuments -->
+      <class name="Scripts.ValidLogin">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.ValidLogin -->
+      <class name="Scripts.OpenDocument">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.OpenDocument -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.NewTestDocuments">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.NewTestDocuments -->
+      <class name="Scripts.ValidLogin">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+          <include name="testValidLogin"/>
+        </methods>
+      </class> <!-- Scripts.ValidLogin -->
+      <class name="Scripts.OpenDocument">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.OpenDocument -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test3(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.NewTestDocuments">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.NewTestDocuments -->
+      <class name="Scripts.ValidLogin">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.ValidLogin -->
+      <class name="Scripts.OpenDocument">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="testOpenDocument"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- Scripts.OpenDocument -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
